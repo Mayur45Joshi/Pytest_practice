@@ -1,9 +1,8 @@
 from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
-import pytest
 #from pageobject import Loginpageobject
 
-from pytestproject.pageobject.Loginpageobject import LoginPage
+from pageobject.Loginpageobject import LoginPage
 
 
 class TestLogin:
