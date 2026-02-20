@@ -28,7 +28,7 @@ def test_hande_popups(playwright:Playwright):
             pw.locator(".getStarted_Sjon").click()
             pw.wait_for_timeout(3000)
             expect(pw).to_have_title("Installation | Playwright")
-            pw.close()  # close the playwright popup/window
+            pw.close()  # close the playwright-sync popup/window
 
     page.wait_for_timeout(5000)
     context.close()

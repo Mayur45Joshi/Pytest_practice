@@ -72,7 +72,7 @@ def test_handle_dynamic_elements_css(page: Page):
         page.wait_for_timeout(2000)
 
 
-# using playwright locator.
+# using playwright-sync locator.
 
 def test_handle_dynamic_elements_role(page: Page):
     page.goto("https://testautomationpractice.blogspot.com/")

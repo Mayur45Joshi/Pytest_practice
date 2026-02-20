@@ -1,4 +1,4 @@
-# from playwright.sync_api import sync_playwright, expect, Page
+# from playwright-sync.sync_api import sync_playwright, expect, Page
 #
 # def select_checkin_date(page, year, month, day):
 #

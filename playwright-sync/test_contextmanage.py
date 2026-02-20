@@ -4,7 +4,7 @@ from playwright.sync_api import sync_playwright, expect, Page, Playwright
 
 def test_browsercontext(playwright: Playwright):
 
-    # chromium=playwright.chromium
+    # chromium=playwright-sync.chromium
     # browser=chromium. Launch()
 
     browser=playwright.chromium.launch(headless=False) # created browser
