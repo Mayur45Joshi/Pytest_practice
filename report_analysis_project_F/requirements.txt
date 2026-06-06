@@ -1,0 +1,4 @@
+matplotlib
+requests
+google-generativeai
+jinja2

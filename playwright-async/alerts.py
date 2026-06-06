@@ -10,12 +10,14 @@ async def main():
         await page.goto("https://testautomationpractice.blogspot.com/")
 
         # -------- Normal Alert --------
-        page.once("dialog", lambda dialog: asyncio.create_task(dialog.accept()))
+        #page.once("dialog", lambda dialog: asyncio.create_task(dialog.accept()))
+        page.once("dialog", lambda dialog : dialog.accept())
         await page.click("#alertBtn")
         await page.wait_for_timeout(2000)
 
         # -------- Confirmation Alert --------
-        page.once("dialog", lambda dialog: asyncio.create_task(dialog.dismiss()))
+        #page.once("dialog", lambda dialog: asyncio.create_task(dialog.dismiss()))
+        page.once("dialog", lambda dialog: dialog.dismiss())
         await page.click("#confirmBtn")
         await page.wait_for_timeout(2000)
 
@@ -23,7 +25,8 @@ async def main():
         print("Confirm result:", text)
 
         # -------- Prompt Alert --------
-        page.once("dialog", lambda dialog: asyncio.create_task(dialog.accept("Mayur")))
+        #page.once("dialog", lambda dialog: asyncio.create_task(dialog.accept("Mayur")))
+        page.once("dialog", lambda dialog: dialog.accept("mayur"))
         await page.click("#promptBtn")
         await page.wait_for_timeout(2000)
 

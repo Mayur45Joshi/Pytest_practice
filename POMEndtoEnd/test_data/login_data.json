@@ -1,0 +1,16 @@
+{
+  "valid_user": {
+    "username": "student",
+    "password": "Password123"
+  },
+  "invalid_username": {
+    "username": "incorrectUser",
+    "password": "Password123",
+    "error": "Your username is invalid!"
+  },
+  "invalid_password": {
+    "username": "student",
+    "password": "incorrectPassword",
+    "error": "Your password is invalid!"
+  }
+}
